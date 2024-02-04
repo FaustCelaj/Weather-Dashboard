@@ -15,5 +15,7 @@ The weather dashboard application can present weather forecasts for numerous cit
 https://openweathermap.org/
 
 ## Live Page
+[https://openweathermap.org/](https://faustcelaj.github.io/Weather-Dashboard/)https://faustcelaj.github.io/Weather-Dashboard/
 
 ## Screenshot
+![Screenshot 2024-02-04 at 12 43 56 PM](https://github.com/FaustCelaj/Weather-Dashboard/assets/149631014/6997a933-65aa-475c-8bba-93dc7f7594b9)
