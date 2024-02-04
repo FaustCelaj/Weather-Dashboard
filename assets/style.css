@@ -1,78 +1,88 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
 header {
-  background-color: #343a40;
-  color: white;
-  padding: 20px 0;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px 0;
 }
 
 main {
-  padding: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .search-history {
-  background-color: #495057;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
 }
 
 #search-history {
-  max-height: 300px;
-  overflow-y: auto;
-  background-color: #343a40;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #1c1c1c;
+    border: 1px solid #343a40;
 }
 
 .list-group-item {
-  background-color: #495057;
-  color: white;
-  border: none;
-  margin-bottom: 10px;
-  cursor: pointer;
+    background-color: #222;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
 }
 
 .list-group-item:hover {
-  background-color: #6c757d;
+    background-color: #333;
 }
 
-.btn-info {
-  background-color: #17a2b8;
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
 }
 
-#current-weather,
-.forecast-card {
-  background-color: #495057;
-  color: white;
+#current-weather {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.forecast-card {
-  margin-bottom: 20px;
+#forecast .card {
+    background-color: #222;
+    flex: 0 0 auto;
+    margin: 10px; 
+    border: none;
+    border-radius: 5px;
+}
+
+#forecast .card-body {
+    padding: 10px;
 }
 
 .weather-icon {
-  width: 50px;
-  height: 50px;
+    width: 50px;
+    height: auto;
 }
 
-/* Responsiveness for forecast cards */
+/* For medium to large devices, set a min-width to forecast cards */
+@media (min-width: 768px) {
+    #forecast .card {
+        min-width: 180px;
+    }
+}
+
+/* For extra small to small devices, allow cards to take full width */
 @media (max-width: 767px) {
-  .forecast-card {
-    width: 100%;
-  }
-}
-
-/* Additional responsiveness and padding for mobile view */
-@media (max-width: 575px) {
-  main {
-    padding: 10px;
-  }
-
-  .forecast-card {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+    #forecast .card {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
