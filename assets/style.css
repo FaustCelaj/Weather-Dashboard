@@ -1,0 +1,78 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.search-history {
+  background-color: #495057;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-history {
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: #343a40;
+}
+
+.list-group-item {
+  background-color: #495057;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #6c757d;
+}
+
+.btn-info {
+  background-color: #17a2b8;
+}
+
+#current-weather,
+.forecast-card {
+  background-color: #495057;
+  color: white;
+}
+
+.forecast-card {
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsiveness for forecast cards */
+@media (max-width: 767px) {
+  .forecast-card {
+    width: 100%;
+  }
+}
+
+/* Additional responsiveness and padding for mobile view */
+@media (max-width: 575px) {
+  main {
+    padding: 10px;
+  }
+
+  .forecast-card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
